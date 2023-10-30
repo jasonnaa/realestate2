@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  realestate2:
+    image: 'jasonnaa/realestate2:latest'
+    environment:
+      - "PORT:3000"
+    ports:
+      - "80:3000"
+    volumes:
+      - ./:/app
